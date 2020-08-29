@@ -57,7 +57,10 @@ button {
 }
 
 .controlPanel .corners .corner input {
-    width: 50%;
+    width: 30%;
+    text-align: center;
+    font-size: 1.5vw;
+    border-radius: 6px;
 }
 
 .controlPanel .corners .corner input:focus {
