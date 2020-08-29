@@ -23,6 +23,10 @@ header {
     border-radius: 8px;
 }
 
+header h1 {
+    font-size: 3vw;
+}
+
 .controlPanel {
     background-color: rgb(77, 77, 200);
     display: flex;
@@ -52,6 +56,10 @@ button {
     padding: 0.8vw;
 }
 
+.controlPanel .corners .corner input {
+    width: 50%;
+}
+
 .controlPanel .corners .corner input:focus {
     background-color: rgb(189, 165, 165)
 }
@@ -71,6 +79,10 @@ button {
 
 .controlPanel .buttonContainer button:hover {
     background-color: aquamarine;
+}
+
+.controlPanel .buttonContainer button:active {
+    background-color: rgb(255, 81, 0);
 }
 
 .theDiv {
