@@ -17,7 +17,10 @@ body {
 header {
     background-color: rgba(29, 75, 75, 0.7);
     text-align: center;
-    margin-bottom: 2vh;
+    width: 40%;
+    margin: 2vh auto;
+    padding: 2vh;
+    border-radius: 8px;
 }
 
 .controlPanel {
@@ -34,7 +37,7 @@ header {
 }
 
 .controlPanel p {
-    font-size: 26px;
+    font-size: 2vw;
 }
 
 .controlPanel .corners .corner {
@@ -43,10 +46,37 @@ header {
     margin: 1vh 0;
 }
 
+.controlPanel .corners .corner input,
+button {
+    outline: none;
+    padding: 0.8vw;
+}
+
+.controlPanel .corners .corner input:focus {
+    background-color: rgb(189, 165, 165)
+}
+
+.controlPanel .corners .corner + .buttonContainer {
+    margin-top: 3vh;
+}
+
+.buttonContainer, 
+button {
+    width: 100%;
+}
+
+.controlPanel .buttonContainer button {
+    border-radius: 4px;
+}
+
+.controlPanel .buttonContainer button:hover {
+    background-color: aquamarine;
+}
+
 .theDiv {
     background-color: red;
     width: 40%;
-    margin: 2vh auto;
+    margin: 4vh auto;
     padding: 3vh;
     text-align: center;
     font-size: 20px;
