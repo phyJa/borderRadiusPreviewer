@@ -1,20 +1,34 @@
+//Take the inputs
+const inputs = {
+    topLeft: document.querySelector("#topLeft"),
+    topRight: document.querySelector("#topRight"),
+    bottomLeft: document.querySelector("#bottomLeft"),
+    bottomRight: document.querySelector("#bottomRight")
+};
 
-function changeBorderRadius() {
-    // Store the inputs here
-    const inputs = {
-        topLeft: document.querySelector("#topLeft"),
-        topRight: document.querySelector("#topRight"),
-        bottomLeft: document.querySelector("#bottomLeft"),
-        bottomRight: document.querySelector("#bottomRight")
-    }
+//Take the div
+const theDiv = document.querySelector(".theDiv");
 
-    // Top left input
-    // Save theDiv
-    const theDiv = document.querySelector(".theDiv");
 
-    // Change the style
-    theDiv.style.borderTopLeftRadius = `${inputs.topLeft.value}` + "px";
-    theDiv.style.borderTopRightRadius = `${inputs.topRight.value}` + "px";
-    theDiv.style.borderBottomLeftRadius = `${inputs.bottomLeft.value}` + "px";
-    theDiv.style.borderBottomRightRadius = `${inputs.bottomRight.value}` + "px";
+// Define the functions
+function changeTopLeft(event) {
+    theDiv.style.borderTopLeftRadius = `${event.target.value}px`;
 }
+
+function changeTopRight(event) {
+    theDiv.style.borderTopRightRadius = `${event.target.value}px`;
+}
+
+function changeBottomLeft(event) {
+    theDiv.style.borderBottomLeftRadius = `${event.target.value}px`;
+}
+
+function changeBottomRight(event) {
+    theDiv.style.borderBottomRightRadius = `${event.target.value}px`;
+}
+
+// Pass the event in the corresponding input
+inputs.topLeft.addEventListener("input", changeTopLeft);
+inputs.topRight.addEventListener("input", changeTopRight);
+inputs.bottomLeft.addEventListener("input", changeBottomLeft);
+inputs.bottomRight.addEventListener("input", changeBottomRight);
