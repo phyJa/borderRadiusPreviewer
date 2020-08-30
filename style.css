@@ -18,13 +18,18 @@ header {
     background-color: rgba(29, 75, 75, 0.7);
     text-align: center;
     width: 40%;
-    margin: 2vh auto;
+    margin: 0vh auto 4vh;
     padding: 2vh;
     border-radius: 8px;
 }
 
 header h1 {
     font-size: 3vw;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
 }
 
 .controlPanel {
@@ -93,6 +98,14 @@ button {
     width: 40%;
     margin: 4vh auto;
     padding: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-size: 20px;
+}
+
+.theDiv p {
+    width: 50%;
+    font-size: 2vw;
 }
