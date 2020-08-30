@@ -45,8 +45,15 @@ main {
     height: 50vh;
 }
 
-.controlPanel p {
+.controlPanel  p {
     font-size: 2vw;
+}
+
+.controlPanel > p {
+    font-size: 3vw;
+    text-align: center;
+    color: rgb(109, 18, 18);
+    font-weight: 700;
 }
 
 .controlPanel .corners .corner {
@@ -76,20 +83,23 @@ button {
     margin-top: 3vh;
 }
 
-.buttonContainer, 
-button {
-    width: 100%;
+.buttonContainer {
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
 }
 
-.controlPanel .buttonContainer button {
+.buttonContainer button {
+    width: 30%;
     border-radius: 4px;
+    margin: 0 auto;
 }
 
-.controlPanel .buttonContainer button:hover {
+.buttonContainer button:hover {
     background-color: aquamarine;
 }
 
-.controlPanel .buttonContainer button:active {
+.buttonContainer button:active {
     background-color: rgb(255, 81, 0);
 }
 
