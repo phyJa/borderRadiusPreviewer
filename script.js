@@ -32,3 +32,15 @@ inputs.topLeft.addEventListener("input", changeTopLeft);
 inputs.topRight.addEventListener("input", changeTopRight);
 inputs.bottomLeft.addEventListener("input", changeBottomLeft);
 inputs.bottomRight.addEventListener("input", changeBottomRight);
+
+function copyToClipboard(){
+    const el = document.createElement('textarea');
+    el.value = `border-radius: ${theDiv.style.borderTopLeftRadius} ${theDiv.style.borderTopRightRadius} ${theDiv.style.borderBottomLeftRadius} ${theDiv.style.borderBottomRightRadius};`;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+}
+
+
+
