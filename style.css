@@ -8,9 +8,12 @@
 }
 
 body {
+    height: 120vh;
+}
+
+body {
     background-color: rgb(13, 5, 22);
     color: azure;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,7 +48,6 @@ main {
     margin: 0 auto;
     border-radius: 1vh;
     padding: 2vw;
-    height: 50vh;
 }
 
 .controlPanel  p {
@@ -82,8 +84,9 @@ button {
     background-color: rgb(189, 165, 165)
 }
 
-.controlPanel .corners .corner + .buttonContainer {
-    margin-top: 3vh;
+.controlPanel .additionalFeatures .rgba {
+    display: flex;
+    justify-content: space-between;
 }
 
 .buttonContainer {

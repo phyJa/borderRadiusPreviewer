@@ -38,7 +38,17 @@ function copyToClipboard(){
     const el = document.createElement('textarea');
 
     // Write in the element the string you want
-    el.value = `.yourDiv {
+    el.value = `
+    .yourDiv {
+        background-color: red;
+        width: 40%;
+        margin: 4vh auto;
+        padding: 3vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
         border-radius: ${theDiv.style.borderTopLeftRadius} ${theDiv.style.borderTopRightRadius} ${theDiv.style.borderBottomLeftRadius} ${theDiv.style.borderBottomRightRadius};
     }`;
     
