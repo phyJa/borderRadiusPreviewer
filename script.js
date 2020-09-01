@@ -34,11 +34,24 @@ inputs.bottomLeft.addEventListener("input", changeBottomLeft);
 inputs.bottomRight.addEventListener("input", changeBottomRight);
 
 function copyToClipboard(){
+    // Create a text area element
     const el = document.createElement('textarea');
-    el.value = `border-radius: ${theDiv.style.borderTopLeftRadius} ${theDiv.style.borderTopRightRadius} ${theDiv.style.borderBottomLeftRadius} ${theDiv.style.borderBottomRightRadius};`;
+
+    // Write in the element the string you want
+    el.value = `.yourDiv {
+        border-radius: ${theDiv.style.borderTopLeftRadius} ${theDiv.style.borderTopRightRadius} ${theDiv.style.borderBottomLeftRadius} ${theDiv.style.borderBottomRightRadius};
+    }`;
+    
+    // Insert the element in the HTML body
     document.body.appendChild(el);
+
+    // Select the element
     el.select();
+
+    // Copy the element content
     document.execCommand('copy');
+
+    // Remove the element from the HTML body
     document.body.removeChild(el);
 }
 
