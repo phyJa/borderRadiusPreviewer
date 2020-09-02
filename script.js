@@ -31,24 +31,36 @@ function changeBottomRight(event) {
     theDiv.style.borderBottomRightRadius = `${event.target.value}px`;
 }
 
-function changeColor(redValue, greenValue, blueValue, alphaValue){
-    theDiv.style.backgroundColor = `rgba(${redValue}, ${greenValue}, ${blueValue}, ${alphaValue})`;
+//Colors
+const colors = {
+    red: 0,
+    green: 0,
+    blue: 0,
+    alpha: 1
+};
+
+function changeColor(colors){
+    theDiv.style.backgroundColor = `rgba(${colors.red}, ${colors.green}, ${colors.blue}, ${colors.alpha})`;
 }
 
 function storeRedValueColor(event){
-    console.log(event.target.value);
+    colors.red = event.target.value;
+    changeColor(colors);
 }
 
 function storeGreenValueColor(event){
-    console.log(event.target.value);
+    colors.green = event.target.value;
+    changeColor(colors);
 }
 
 function storeBlueValueColor(event){
-    console.log(event.target.value);
+    colors.blue = event.target.value;
+    changeColor(colors);
 }
 
 function storeAlphaValue(event){
-    console.log(event.target.value);
+    colors.alpha = event.target.value;
+    changeColor(colors);
 }
 
 // Pass the event in the corresponding input
@@ -71,7 +83,7 @@ function copyToClipboard(){
     // Write in the element the string you want
     el.value = `
     .yourDiv {
-        background-color: red;
+        background-color: rgba(${colors.red}, ${colors.green}, ${colors.blue}, ${colors.alpha});
         width: 40%;
         margin: 4vh auto;
         padding: 3vh;

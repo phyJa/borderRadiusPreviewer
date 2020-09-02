@@ -123,7 +123,7 @@ button {
 }
 
 .theDiv {
-    background-color: red;
+    background-color: rgba(0, 0, 0, 1);
     width: 40%;
     margin: 4vh auto;
     padding: 3vh;
