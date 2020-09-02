@@ -68,6 +68,7 @@ main {
 }
 
 .controlPanel .corners .corner input,
+.controlPanel .additionalFeatures .colorFeature .rgba .color input,
 button {
     outline: none;
     padding: 0.8vw;
@@ -80,13 +81,25 @@ button {
     border-radius: 6px;
 }
 
-.controlPanel .corners .corner input:focus {
+.controlPanel .corners .corner input:focus,
+.controlPanel .additionalFeatures .colorFeature .rgba .color input:focus {
     background-color: rgb(189, 165, 165)
 }
 
-.controlPanel .additionalFeatures .rgba {
+.controlPanel .additionalFeatures .colorFeature {
+    border-top: rgb(243, 148, 148) 5px solid;
+}
+
+.controlPanel .additionalFeatures .colorFeature .rgba {
     display: flex;
     justify-content: space-between;
+}
+
+.controlPanel .additionalFeatures .colorFeature .rgba .color input {
+    width: 80%;
+    text-align: center;
+    font-size: 2vw;
+    border-radius: 4px;
 }
 
 .buttonContainer {
