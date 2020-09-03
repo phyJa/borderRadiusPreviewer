@@ -10,6 +10,14 @@ const inputs = {
     alpha: document.querySelector("#alpha")
 };
 
+//Colors
+const colors = {
+    red: 0,
+    green: 0,
+    blue: 0,
+    alpha: 1
+};
+
 //Take the div
 const theDiv = document.querySelector(".theDiv");
 
@@ -30,14 +38,6 @@ function changeBottomLeft(event) {
 function changeBottomRight(event) {
     theDiv.style.borderBottomRightRadius = `${event.target.value}px`;
 }
-
-//Colors
-const colors = {
-    red: 0,
-    green: 0,
-    blue: 0,
-    alpha: 1
-};
 
 function changeColor(colors){
     theDiv.style.backgroundColor = `rgba(${colors.red}, ${colors.green}, ${colors.blue}, ${colors.alpha})`;
