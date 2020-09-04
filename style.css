@@ -17,9 +17,8 @@ header {
     background-color: #469D5F;
     color: #FAF6A9;
     text-align: center;
-    margin: 0vh auto 1vw;
+    margin: 0vh auto 5vw;
     padding: 2vw;
-    font-size: 2vw;
 }
 
 header h1 {
@@ -27,20 +26,22 @@ header h1 {
 }
 
 main {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .controlPanel {
-    background-color: rgb(77, 77, 200);
+    background-color: #4B898D;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    width: 40%;
+    width: 60%;
     margin: 0 auto;
-    border-radius: 1vh;
+    border-radius: 8px;
     padding: 2vw;
+    color: #D5E9BB;
 }
 
 .controlPanel  p {
@@ -50,7 +51,6 @@ main {
 .controlPanel > p {
     font-size: 3vw;
     text-align: center;
-    color: rgb(109, 18, 18);
     font-weight: 700;
 }
 
@@ -117,6 +117,7 @@ button {
 
 .theDiv {
     background-color: rgba(0, 0, 0, 1);
+    border: white solid 2px;
     width: 40%;
     margin: 4vh auto;
     padding: 3vh;

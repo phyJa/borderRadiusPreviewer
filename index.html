@@ -14,66 +14,70 @@
     </header>
 
     <main>
-        <div class="controlPanel">
-            <p> Control panel </p> 
-    
-            <div class="corners"> 
-                <div class="corner">
-                    <p class="title"> Top-left:  </p>
-    
-                    <input id="topLeft" type="number" />
+        <div class="controlPanelContainer">
+            <div class="controlPanel">
+                <p> Control panel </p> 
+        
+                <div class="corners"> 
+                    <div class="corner">
+                        <p class="title"> Top-left:  </p>
+        
+                        <input id="topLeft" type="number" />
+                    </div>
+        
+                    
+                    <div class="corner">
+                        <p class="title"> Top-right:  </p>
+        
+                        <input id="topRight" type="number" />
+                    </div>
+                    
+                    <div class="corner">
+                        <p class="title"> Bottom-left:  </p>
+        
+                        <input id="bottomLeft" type="number" />
+                    </div>
+        
+                    <div class="corner">
+                        <p class="title"> Bottom-right:  </p>
+        
+                        <input id="bottomRight" type="number" />
+                    </div>
                 </div>
     
-                
-                <div class="corner">
-                    <p class="title"> Top-right:  </p>
+                <div class="additionalFeatures">
+                    <div class="colorFeature">
+                        <p class="title"> Color (RGBA standard) </p>
+                        <div class="rgba">
+                            <div class="color">
+                                <p> Red  </p>
+                                <input id="red" type="number" min="0" max="255" value="0"/>
+                            </div>
     
-                    <input id="topRight" type="number" />
-                </div>
-                
-                <div class="corner">
-                    <p class="title"> Bottom-left:  </p>
+                            <div class="color">
+                                <p> Green  </p>
+                                <input id="green" type="number" min="0" max="255" value="0"/>
+                            </div>
     
-                    <input id="bottomLeft" type="number" />
-                </div>
+                            <div class="color">
+                                <p> Blue  </p>
+                                <input id="blue" type="number" min="0" max="255" value="0"/>
+                            </div>
     
-                <div class="corner">
-                    <p class="title"> Bottom-right:  </p>
-    
-                    <input id="bottomRight" type="number" />
-                </div>
-            </div>
-
-            <div class="additionalFeatures">
-                <div class="colorFeature">
-                    <p class="title"> Color (RGBA standard) </p>
-                    <div class="rgba">
-                        <div class="color">
-                            <p> Red  </p>
-                            <input id="red" type="number" min="0" max="255" value="0"/>
-                        </div>
-
-                        <div class="color">
-                            <p> Green  </p>
-                            <input id="green" type="number" min="0" max="255" value="0"/>
-                        </div>
-
-                        <div class="color">
-                            <p> Blue  </p>
-                            <input id="blue" type="number" min="0" max="255" value="0"/>
-                        </div>
-
-                        <div class="color">
-                            <p> Alpha  </p>
-                            <input id="alpha" type="number" min="0" max="1" step="0.01" value="1"/>
+                            <div class="color">
+                                <p> Alpha  </p>
+                                <input id="alpha" type="number" min="0" max="1" step="0.01" value="1"/>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    
-        <div class="theDiv">
-            <p> Hey, hello! I will be your test div!</p>
+        
+        <div class="theDivContainer">
+            <div class="theDiv">
+                <p> Hey, hello! I will be your test div!</p>
+            </div>
         </div>
     </main>
 
