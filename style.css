@@ -13,10 +13,13 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
-header {
+header, footer {
     background-color: #469D5F;
     color: #FAF6A9;
     text-align: center;
+}
+
+header {
     margin: 0vh auto 5vw;
     padding: 2vw;
 }
@@ -41,6 +44,7 @@ main {
     margin: 0 auto;
     border-radius: 8px;
     padding: 2vw;
+    padding-top: 10px;
     color: #D5E9BB;
 }
 
@@ -52,12 +56,13 @@ main {
     font-size: 3vw;
     text-align: center;
     font-weight: 700;
+    margin-bottom: 25px;
 }
 
 .controlPanel .corners .corner {
     display: flex;
     justify-content: space-between;
-    margin: 1vh 0;
+    margin-bottom: 20px;
 }
 
 .controlPanel .corners .corner input,
@@ -76,7 +81,7 @@ button {
 
 .controlPanel .corners .corner input:focus,
 .controlPanel .additionalFeatures .colorFeature .rgba .color input:focus {
-    background-color: rgb(189, 165, 165)
+    background-color: #81BB83;
 }
 
 .controlPanel .additionalFeatures .colorFeature {
@@ -131,4 +136,9 @@ button {
 .theDiv p {
     width: 50%;
     font-size: 2vw;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 6vw;
 }
