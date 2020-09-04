@@ -8,25 +8,18 @@
 }
 
 body {
-    height: 120vh;
-}
-
-body {
-    background-color: rgb(13, 5, 22);
+    background-color: #1F5139;
     color: azure;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     font-family: 'Noto Sans', sans-serif;
 }
 
 header {
-    background-color: rgba(29, 75, 75, 0.7);
+    background-color: #469D5F;
+    color: #FAF6A9;
     text-align: center;
-    width: 40%;
-    margin: 0vh auto 4vh;
-    padding: 2vh;
-    border-radius: 8px;
+    margin: 0vh auto 1vw;
+    padding: 2vw;
+    font-size: 2vw;
 }
 
 header h1 {
