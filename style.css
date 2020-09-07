@@ -40,7 +40,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     border-radius: 8px;
     padding: 2vw;
@@ -100,32 +100,16 @@ button {
     border-radius: 4px;
 }
 
-.buttonContainer {
-    margin-top: 2vw;
+.theDivContainer {
     display: flex;
+    align-items: center;
     justify-content: center;
-}
-
-.buttonContainer button {
-    width: 30%;
-    border-radius: 4px;
-    margin: 0 auto;
-}
-
-.buttonContainer button:hover {
-    background-color: aquamarine;
-}
-
-.buttonContainer button:active {
-    background-color: rgb(255, 81, 0);
 }
 
 .theDiv {
     background-color: rgba(0, 0, 0, 1);
     border: white solid 2px;
-    width: 40%;
-    margin: 4vh auto;
-    padding: 3vh;
+    padding: 3vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,6 +120,31 @@ button {
 .theDiv p {
     width: 50%;
     font-size: 2vw;
+}
+
+.buttonContainer {
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonContainer button {
+    width: 30%;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #192a2f;
+    color: #D5E9BB;
+    padding: 2vw;
+    font-size: 2vw;
+}
+
+.buttonContainer button:hover {
+    background-color: rgb(127, 255, 144);
+    color: rgb(32, 24, 24);
+}
+
+.buttonContainer button:active {
+    background-color: rgb(255, 81, 0);
 }
 
 footer {
