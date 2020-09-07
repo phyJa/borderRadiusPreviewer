@@ -88,6 +88,7 @@ button {
 .controlPanel .corners .corner input:focus,
 .controlPanel .additionalFeatures .colorFeature .rgba .color input:focus {
     background-color: #81BB83;
+    color: rgb(245, 244, 244);
 }
 
 .controlPanel .additionalFeatures .colorFeature {
@@ -129,7 +130,7 @@ button {
 }
 
 .buttonContainer {
-    margin-top: 2vw;
+    margin: 4vw 0;
     display: flex;
     justify-content: center;
 }
