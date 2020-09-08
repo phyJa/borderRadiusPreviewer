@@ -10,7 +10,7 @@
 :root {
     --stripe-color: #469D5F;
     --header-footer-font-color: #FAF6A9;
-    --active-color: rgb(255, 81, 0): 
+    --activeLink-color: #ff1500;
 }
 
 body {
@@ -62,9 +62,24 @@ main {
     font-size: 3vw;
     text-align: center;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
+.controlPanel p button {
+    background-color: aquamarine;
+    border-radius: 8px 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: brown;
+    padding: 14px 16px;
+    transition: background-color 400ms;
+}
+
+.controlPanel p button:hover {
+    background-color: rgb(236, 255, 127);
+    cursor: pointer;
+}
+  
 .controlPanel .corners .corner {
     display: flex;
     justify-content: space-between;
@@ -143,16 +158,17 @@ button {
     color: #924747;
     padding: 2vw;
     font-size: 2vw;
-    transition: 400ms;
+    transition: color 400ms, background-color 400ms;
 }
 
 .buttonContainer button:hover {
     background-color: rgb(127, 255, 144);
     color: rgb(32, 24, 24);
+    cursor: pointer;
 }
 
 .buttonContainer button:active {
-    background-color: var(--active-color);
+    background-color: var(--activeLink-color);
 }
 
 footer {
@@ -168,7 +184,7 @@ footer a {
     text-decoration: none;
     border-bottom: 2px solid var(--stripe-color);
     color: var(--header-footer-font-color);
-    transition: 400ms;
+    transition: color 400ms, border-bottom 400ms;
 }
 
 footer a:hover {
@@ -177,8 +193,8 @@ footer a:hover {
 }
 
 footer a:active {
-    color: var(--active-color);
-    border-color: var(--active-color);
+    color: var(--activeLink-color);
+    border-color: var(--activeLink-color);
 }
 
 footer a + a {
