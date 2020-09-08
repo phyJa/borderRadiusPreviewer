@@ -1,3 +1,6 @@
+// Control panel
+const controlPanel = document.querySelector(".controlPanel");
+
 //Take the inputs
 const inputs = {
     topLeft: document.querySelector("#topLeft"),

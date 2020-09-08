@@ -70,3 +70,7 @@ function copyToClipboard(){
     // Remove the element from the HTML body
     document.body.removeChild(el);
 }
+
+function displayMoreCorners(){
+    controlPanel.style.width = "95%";
+}

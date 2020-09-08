@@ -52,10 +52,11 @@ main {
     padding: 2vw;
     padding-top: 10px;
     color: #D5E9BB;
+    transition: width 1s;
 }
 
 .controlPanel  p {
-    font-size: 2vw;
+    font-size: 20px;
 }
 
 .controlPanel > p {
@@ -79,10 +80,17 @@ main {
     background-color: rgb(236, 255, 127);
     cursor: pointer;
 }
-  
+
+
+.controlPanel .corners {
+    width: 60%;
+    margin: 0 auto;
+}
+
 .controlPanel .corners .corner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
 }
 
@@ -94,7 +102,7 @@ button {
 }
 
 .controlPanel .corners .corner input {
-    width: 30%;
+    width: 100px;
     text-align: center;
     font-size: 1.5vw;
     border-radius: 6px;
