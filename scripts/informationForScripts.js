@@ -1,6 +1,18 @@
 // Control panel
 const controlPanel = document.querySelector(".controlPanel");
 
+// Paragraphs less and more
+const controlParagraphs = {
+    less: controlPanel.querySelector("#less"),
+    more: controlPanel.querySelector("#more")
+}
+
+// Corners
+const corners = controlPanel.querySelector(".corners");
+
+// Other corners
+const otherCorners = corners.querySelector("#otherCorners");
+
 //Take the inputs
 const inputs = {
     topLeft: document.querySelector("#topLeft"),

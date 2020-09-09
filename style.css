@@ -87,6 +87,11 @@ main {
     margin: 0 auto;
 }
 
+.controlPanel .corners .fourMainCorners,
+.controlPanel .corners .otherCorners {
+    padding: 10px;
+}
+
 .controlPanel .corners .corner {
     display: flex;
     justify-content: space-between;
@@ -112,6 +117,10 @@ button {
 .controlPanel .additionalFeatures .colorFeature .rgba .color input:focus {
     background-color: #81BB83;
     color: rgb(245, 244, 244);
+}
+
+.notDisplay {
+    display: none;
 }
 
 .controlPanel .additionalFeatures .colorFeature {

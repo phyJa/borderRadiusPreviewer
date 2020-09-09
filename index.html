@@ -18,7 +18,9 @@
             <div class="controlPanel">
                 <p> Control panel </p>
                 
-                <p> <button onclick="displayMoreCorners()">More corners</button> </p>
+                <p id="more"> <button onclick="displayMoreCorners()">Show more corners</button> </p>
+
+                <p id="less" class="notDisplay"> <button onclick="displayLessCorners()">Show less corners</button> </p>
         
                 <div class="corners">
                     <div class="fourMainCorners">
@@ -48,7 +50,7 @@
                         </div>
                     </div>
                     
-                    <div class="otherCorners">
+                    <div id="otherCorners" class="otherCorners notDisplay">
                         a
                     </div>
                 </div>

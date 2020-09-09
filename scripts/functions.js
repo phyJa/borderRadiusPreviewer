@@ -72,5 +72,38 @@ function copyToClipboard(){
 }
 
 function displayMoreCorners(){
+    // Expand the width of the control panel 
     controlPanel.style.width = "95%";
+
+    // Remove the notDisplay class from #otherCorners and #less
+    otherCorners.classList.remove("notDisplay"); 
+    controlParagraphs.less.classList.remove("notDisplay");
+
+    // Add the not display class to #more
+    controlParagraphs.more.classList.add("notDisplay");
+
+    // Change the style of the corners
+    corners.style.width = "95%";
+    corners.style.display = "grid";
+    corners.style.gridTemplateColumns = "1fr 1fr";
+}
+
+
+function displayLessCorners(){
+    // Expand the width of the control panel 
+    controlPanel.style.width = "80%";
+
+    // Remove the notDisplay class from #otherCorners
+    otherCorners.classList.remove("notDisplay"); 
+
+    // Add the notDisplay class from #otherCorners and #less
+    otherCorners.classList.add("notDisplay"); 
+    controlParagraphs.less.classList.add("notDisplay");
+
+    // Remove the not display class to #more
+    controlParagraphs.more.classList.remove("notDisplay");
+
+    // Change the style of the corners
+    corners.style.width = "60%";
+    corners.style.display = "block";
 }
