@@ -7,6 +7,9 @@ const controlParagraphs = {
     more: controlPanel.querySelector("#more")
 }
 
+// Axis names
+const horizontalAxis = controlPanel.querySelector("#horizontal");
+
 // Corners
 const corners = controlPanel.querySelector(".corners");
 

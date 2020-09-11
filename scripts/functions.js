@@ -75,9 +75,10 @@ function displayMoreCorners(){
     // Expand the width of the control panel 
     controlPanel.style.width = "95%";
 
-    // Remove the notDisplay class from #otherCorners and #less
+    // Remove the notDisplay class from #otherCorners, #less and horizontalAxis(#horizontal)
     otherCorners.classList.remove("notDisplay"); 
     controlParagraphs.less.classList.remove("notDisplay");
+    horizontalAxis.classList.remove("notDisplay");
 
     // Add the not display class to #more
     controlParagraphs.more.classList.add("notDisplay");
@@ -96,9 +97,10 @@ function displayLessCorners(){
     // Remove the notDisplay class from #otherCorners
     otherCorners.classList.remove("notDisplay"); 
 
-    // Add the notDisplay class from #otherCorners and #less
+    // Add the notDisplay class from #otherCorners, #less and horizontalAxis
     otherCorners.classList.add("notDisplay"); 
     controlParagraphs.less.classList.add("notDisplay");
+    horizontalAxis.classList.add("notDisplay");
 
     // Remove the not display class to #more
     controlParagraphs.more.classList.remove("notDisplay");
