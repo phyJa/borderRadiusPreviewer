@@ -92,6 +92,10 @@ main {
     padding: 10px;
 }
 
+.controlPanel .corners .otherCorners {
+    border-left: violet 2px dashed;
+}
+
 .controlPanel .corners .corner {
     display: flex;
     justify-content: space-between;
