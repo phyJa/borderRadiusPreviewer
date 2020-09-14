@@ -37,13 +37,21 @@ const inputs = {
     alpha: document.querySelector("#alpha")
 };
 
+//Borders
+const borders = {
+    topLeft: 0,
+    topRight: 0,
+    bottomLeft:  0,
+    bottomRight: 0,
+    allValues: false
+};
+
 //Colors
 const colors = {
     red: 0,
     green: 0,
     blue: 0,
     alpha: 1,
-    allValues: false
 };
 
 //Take the div

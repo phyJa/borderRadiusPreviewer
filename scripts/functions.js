@@ -1,4 +1,9 @@
 // Define the functions
+function changeBorders(borderObject) {
+    if( borderObject.allValues )
+    theDiv.style.borderRadius = `${borderObject.topLeft}px ${borderObject.topRight}px ${borderObject.bottomLeft}px ${borderObject.bottomRight}px`;
+}
+
 function changeTopLeft(event) {
     theDiv.style.borderTopLeftRadius = `${event.target.value}px`;
 }
@@ -91,7 +96,6 @@ function displayMoreCorners(){
     // Change the property "allValues" of colors to true:
     colors.allValues = true;
 }
-
 
 function displayLessCorners(){
     // Expand the width of the control panel 
