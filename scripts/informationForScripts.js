@@ -18,10 +18,19 @@ const otherCorners = corners.querySelector("#otherCorners");
 
 //Take the inputs
 const inputs = {
+    // Horizontal and standard values
     topLeft: document.querySelector("#topLeft"),
     topRight: document.querySelector("#topRight"),
     bottomLeft: document.querySelector("#bottomLeft"),
     bottomRight: document.querySelector("#bottomRight"),
+
+    // Vertical values
+    topLeftB: document.querySelector("#topLeftB"),
+    topRightB: document.querySelector("#topRightB"),
+    bottomLeftB: document.querySelector("#bottomLeftB"),
+    bottomRightB: document.querySelector("#bottomRightB"),
+
+    //Colors
     red: document.querySelector("#red"),
     green: document.querySelector("#green"),
     blue: document.querySelector("#blue"),
@@ -33,7 +42,8 @@ const colors = {
     red: 0,
     green: 0,
     blue: 0,
-    alpha: 1
+    alpha: 1,
+    allValues: false
 };
 
 //Take the div

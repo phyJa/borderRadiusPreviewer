@@ -87,6 +87,9 @@ function displayMoreCorners(){
     corners.style.width = "95%";
     corners.style.display = "grid";
     corners.style.gridTemplateColumns = "1fr 1fr";
+
+    // Change the property "allValues" of colors to true:
+    colors.allValues = true;
 }
 
 
@@ -108,4 +111,7 @@ function displayLessCorners(){
     // Change the style of the corners
     corners.style.width = "60%";
     corners.style.display = "block";
+
+    // Change the property "allValues" of colors to false:
+    colors.allValues = false;
 }
