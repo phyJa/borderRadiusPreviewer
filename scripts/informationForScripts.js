@@ -39,11 +39,20 @@ const inputs = {
 
 //Borders
 const borders = {
+    // Standard
     topLeft: 0,
     topRight: 0,
     bottomLeft:  0,
     bottomRight: 0,
-    allValues: false
+
+    //Boolean
+    allValues: false,
+
+    //Extra Values
+    topLeftB: 0,
+    topRightB: 0,
+    bottomLeftB:  0,
+    bottomRightB: 0
 };
 
 //Colors

@@ -1,23 +1,65 @@
 // Define the functions
 function changeBorders(borderObject) {
-    if( borderObject.allValues )
-    theDiv.style.borderRadius = `${borderObject.topLeft}px ${borderObject.topRight}px ${borderObject.bottomLeft}px ${borderObject.bottomRight}px`;
+    if(!borderObject.allValues) {
+        // Standard
+        theDiv.style.borderTopLeftRadius = `${borderObject.topLeft}px`;
+        theDiv.style.borderTopRightRadius = `${borderObject.topRight}px`;
+        theDiv.style.borderBottomLeftRadius = `${borderObject.bottomLeft}px`;
+        theDiv.style.borderBottomRightRadius = `${borderObject.bottomRight}px`;
+    }
+    else {
+        theDiv.style.borderRadius = `
+            ${borderObject.topLeft}px 
+            ${borderObject.topRight}px 
+            ${borderObject.bottomRight}px
+            ${borderObject.bottomLeft}px 
+            / 
+            ${borderObject.topLeftB}px 
+            ${borderObject.topRightB}px 
+            ${borderObject.bottomRightB}px
+            ${borderObject.bottomLeftB}px 
+        `;
+    }
 }
 
 function changeTopLeft(event) {
-    theDiv.style.borderTopLeftRadius = `${event.target.value}px`;
+    borders.topLeft = event.target.value;
+    changeBorders(borders);
 }
 
 function changeTopRight(event) {
-    theDiv.style.borderTopRightRadius = `${event.target.value}px`;
+    borders.topRight = event.target.value;
+    changeBorders(borders);
 }
 
 function changeBottomLeft(event) {
-    theDiv.style.borderBottomLeftRadius = `${event.target.value}px`;
+    borders.bottomLeft = event.target.value;
+    changeBorders(borders);
 }
 
 function changeBottomRight(event) {
-    theDiv.style.borderBottomRightRadius = `${event.target.value}px`;
+    borders.bottomRight = event.target.value;
+    changeBorders(borders);
+}
+
+function changeTopLeftB(event) {
+    borders.topLeftB = event.target.value;
+    changeBorders(borders);
+}
+
+function changeTopRightB(event) {
+    borders.topRightB = event.target.value;
+    changeBorders(borders);
+}
+
+function changeBottomLeftB(event) {
+    borders.bottomLeftB = event.target.value;
+    changeBorders(borders);
+}
+
+function changeBottomRightB(event) {
+    borders.bottomRightB = event.target.value;
+    changeBorders(borders);
 }
 
 function changeColor(colors){
@@ -93,8 +135,8 @@ function displayMoreCorners(){
     corners.style.display = "grid";
     corners.style.gridTemplateColumns = "1fr 1fr";
 
-    // Change the property "allValues" of colors to true:
-    colors.allValues = true;
+    // Change the property "allValues" of borders to true:
+    borders.allValues = true;
 }
 
 function displayLessCorners(){
@@ -116,6 +158,6 @@ function displayLessCorners(){
     corners.style.width = "60%";
     corners.style.display = "block";
 
-    // Change the property "allValues" of colors to false:
-    colors.allValues = false;
+    // Change the property "allValues" of borders to false:
+    borders.allValues = false;
 }
