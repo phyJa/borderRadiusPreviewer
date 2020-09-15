@@ -37,37 +37,37 @@ function changeTopLeft(event) {
 }
 
 function changeTopRight(event) {
-    borders.topRight = event.target.value;
+    borders.topRight = changeStandardValueToZero(event.target.value);
     changeBorders(borders);
 }
 
 function changeBottomLeft(event) {
-    borders.bottomLeft = event.target.value;
+    borders.bottomLeft = changeStandardValueToZero(event.target.value);
     changeBorders(borders);
 }
 
 function changeBottomRight(event) {
-    borders.bottomRight = event.target.value;
+    borders.bottomRight = changeStandardValueToZero(event.target.value);
     changeBorders(borders);
 }
 
 function changeTopLeftB(event) {
-    borders.topLeftB = event.target.value;
+    borders.topLeftB = changeStandardValueToZero(event.target.value);
     changeBorders(borders);
 }
 
 function changeTopRightB(event) {
-    borders.topRightB = event.target.value;
+    borders.topRightB = changeStandardValueToZero(event.target.value);
     changeBorders(borders);
 }
 
 function changeBottomLeftB(event) {
-    borders.bottomLeftB = event.target.value;
+    borders.bottomLeftB = changeStandardValueToZero(event.target.value);
     changeBorders(borders);
 }
 
 function changeBottomRightB(event) {
-    borders.bottomRightB = event.target.value;
+    borders.bottomRightB = changeStandardValueToZero(event.target.value);
     changeBorders(borders);
 }
 
@@ -76,22 +76,22 @@ function changeColor(colors){
 }
 
 function storeRedValueColor(event){
-    colors.red = event.target.value;
+    colors.red = changeStandardValueToZero(event.target.value);
     changeColor(colors);
 }
 
 function storeGreenValueColor(event){
-    colors.green = event.target.value;
+    colors.green = changeStandardValueToZero(event.target.value);
     changeColor(colors);
 }
 
 function storeBlueValueColor(event){
-    colors.blue = event.target.value;
+    colors.blue = changeStandardValueToZero(event.target.value);
     changeColor(colors);
 }
 
 function storeAlphaValue(event){
-    colors.alpha = event.target.value;
+    colors.alpha = changeStandardValueToZero(event.target.value);
     changeColor(colors);
 }
 
