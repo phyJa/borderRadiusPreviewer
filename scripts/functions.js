@@ -2,10 +2,12 @@
 function changeBorders(borderObject) {
     if(!borderObject.allValues) {
         // Standard
-        theDiv.style.borderTopLeftRadius = `${borderObject.topLeft}px`;
-        theDiv.style.borderTopRightRadius = `${borderObject.topRight}px`;
-        theDiv.style.borderBottomLeftRadius = `${borderObject.bottomLeft}px`;
-        theDiv.style.borderBottomRightRadius = `${borderObject.bottomRight}px`;
+        theDiv.style.borderRadius = `
+            ${borderObject.topLeft}px
+            ${borderObject.topRight}px
+            ${borderObject.bottomRight}px
+            ${borderObject.bottomLeft}px
+        `;
     }
     else {
         theDiv.style.borderRadius = `
@@ -102,7 +104,7 @@ function copyToClipboard(){
         justify-content: center;
         text-align: center;
         font-size: 20px;
-        border-radius: ${theDiv.style.borderTopLeftRadius} ${theDiv.style.borderTopRightRadius} ${theDiv.style.borderBottomLeftRadius} ${theDiv.style.borderBottomRightRadius};
+        border-radius: ${theDiv.style.borderTopLeftRadius} ${theDiv.style.borderTopRightRadius} ${theDiv.style.borderBottomRightRadius} ${theDiv.style.borderBottomLeftRadius};
     }`;
     
     // Insert the element in the HTML body
