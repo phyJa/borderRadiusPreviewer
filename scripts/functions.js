@@ -24,8 +24,15 @@ function changeBorders(borderObject) {
     }
 }
 
+function changeStandardValueToZero(objectProperty) {
+    if(objectProperty === "")
+        objectProperty = 0;
+
+    return objectProperty;
+}
+
 function changeTopLeft(event) {
-    borders.topLeft = event.target.value;
+    borders.topLeft = changeStandardValueToZero(event.target.value);
     changeBorders(borders);
 }
 
