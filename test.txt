@@ -1,0 +1,13 @@
+
+    .yourDiv {
+        background-color: rgba(0, 0, 0, 1);
+        width: 40%;
+        margin: 4vh auto;
+        padding: 3vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 0px 0px 0px 0px;
+    }

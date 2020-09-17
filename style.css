@@ -56,15 +56,23 @@ main {
     transition: width 1s;
 }
 
-.controlPanel  p {
-    font-size: 20px;
-}
 
-.controlPanel > p {
+.controlPanel .mainTitle {
     font-size: 3vw;
     text-align: center;
     font-weight: 700;
     margin-bottom: 20px;
+}
+
+.bordersTitle,
+.controlPanel .additionalFeatures p.title {
+    font-size: 2.5vw;
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .controlPanel p button {
@@ -128,7 +136,8 @@ button {
     display: none;
 }
 
-.controlPanel .additionalFeatures .colorFeature {
+.controlPanel .additionalFeatures .colorFeature,
+.bordersTitle {
     border-top: rgb(243, 148, 148) 5px solid;
 }
 

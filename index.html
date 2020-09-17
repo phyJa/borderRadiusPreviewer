@@ -16,11 +16,16 @@
     <main>
         <div class="controlPanelContainer">
             <div class="controlPanel">
-                <p> Control panel </p>
-                
-                <p id="more"> <button onclick="displayMoreCorners()">Show more corners</button> </p>
+                <p class="mainTitle"> Control panel </p>
 
-                <p id="less" class="notDisplay"> <button onclick="displayLessCorners()">Show less corners</button> </p>
+                <p class="bordersTitle"> Borders </p>
+                
+                <div class="buttonsContainer">
+                    <p id="more"> <button onclick="displayMoreCorners()">Show more corners</button> </p>
+
+                    <p id="less" class="notDisplay"> <button onclick="displayLessCorners()">Show less corners</button> </p>
+                </div>
+                
         
                 <div class="corners">
                     <div class="fourMainCorners">
@@ -87,6 +92,7 @@
                 <div class="additionalFeatures">
                     <div class="colorFeature">
                         <p class="title"> Background Color (RGBA standard) </p>
+
                         <div class="rgba">
                             <div class="color">
                                 <p> Red  </p>
