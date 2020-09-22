@@ -39,6 +39,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 110vh;
+    align-items: center;
 }
 
 .controlPanel {
@@ -158,6 +159,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    margin: 0 auto;
+    height: 80%;
+    width: 80%;
 }
 
 .theDiv {
