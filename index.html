@@ -1,147 +1,224 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Border radius visualizer</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    <header>
-        <h1> Control CSS borders and colors! </h1>
-    </header>
+    <head>
 
-    <main>
-        <div class="controlPanelContainer">
-            <div class="controlPanel">
-                <p class="mainTitle"> Control panel </p>
+        <meta charset="UTF-8">
 
-                <p class="bordersTitle"> Borders </p>
-                
-                <div class="buttonsContainer">
-                    <p id="more"> <button onclick="displayMoreCorners()">Show more corners</button> </p>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                    <p id="less" class="notDisplay"> <button onclick="displayLessCorners()">Show less corners</button> </p>
-                </div>
-                
-        
-                <div class="corners">
-                    <div class="fourMainCorners">
+        <title>Border radius visualizer</title>
 
-                        <p id="horizontal" class="axis notDisplay"> Horizontal axis: </p>
+        <!-- CSS -->
 
-                        <div class="corner">
-                            <p class="title"> Top-left:  </p>
+        <link rel="stylesheet" href="style.css" />
+
+    </head>
+
+    <body>
+        <header>
+
+            <h1> Control CSS borders and colors! </h1>
+
+        </header>
+
+        <main>
             
-                            <input id="topLeft" type="number" value="0" />
-                        </div>
-            
-                        
-                        <div class="corner">
-                            <p class="title"> Top-right:  </p>
-            
-                            <input id="topRight" type="number" value="0" />
-                        </div>
-                        
-                        <div class="corner">
-                            <p class="title"> Bottom-left:  </p>
-            
-                            <input id="bottomLeft" type="number" value="0" />
-                        </div>
-            
-                        <div class="corner">
-                            <p class="title"> Bottom-right:  </p>
-            
-                            <input id="bottomRight" type="number" value="0" />
-                        </div>
+            <div class="controlPanelContainer">
+
+                <div class="controlPanel">
+
+                    <p class="mainTitle"> Control panel </p>
+
+                    <p class="bordersTitle"> Borders </p>
+                    
+                    <div class="buttonsContainer">
+
+                        <p id="more"> <button onclick="displayMoreCorners()">Show more corners</button> </p>
+
+                        <p id="less" class="notDisplay"> <button onclick="displayLessCorners()">Show less corners</button> </p>
+                    
                     </div>
                     
-                    <div id="otherCorners" class="otherCorners notDisplay">
-                        
-                        <p class="axis"> Vertical axis: </p>
+            
+                    <div class="corners">
+                       
+                        <div class="fourMainCorners">
 
-                        <div class="corner">
-                            <p class="title"> Top-left:  </p>
-            
-                            <input id="topLeftB" type="number" value="0" />
-                        </div>
-            
-                        
-                        <div class="corner">
-                            <p class="title"> Top-right:  </p>
-            
-                            <input id="topRightB" type="number" value="0" />
-                        </div>
-                        
-                        <div class="corner">
-                            <p class="title"> Bottom-left:  </p>
-            
-                            <input id="bottomLeftB" type="number" value="0" />
-                        </div>
-            
-                        <div class="corner">
-                            <p class="title"> Bottom-right:  </p>
-            
-                            <input id="bottomRightB" type="number" value="0" />
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="additionalFeatures">
-                    <div class="colorFeature">
-                        <p class="title"> Background Color (RGBA standard) </p>
+                            <p id="horizontal" class="axis notDisplay"> Horizontal axis: </p>
 
-                        <div class="rgba">
-                            <div class="color">
-                                <p> Red  </p>
-                                <input id="red" type="number" min="0" max="255" value="0"/>
+                            <div class="corner">
+                              
+                                <p class="title"> Top-left:  </p>
+                
+                                <input id="topLeft" type="number" value="0" />
+
                             </div>
-    
-                            <div class="color">
-                                <p> Green  </p>
-                                <input id="green" type="number" min="0" max="255" value="0"/>
+                
+                            
+                            <div class="corner">
+
+                                <p class="title"> Top-right:  </p>
+                
+                                <input id="topRight" type="number" value="0" />
+
                             </div>
-    
-                            <div class="color">
-                                <p> Blue  </p>
-                                <input id="blue" type="number" min="0" max="255" value="0"/>
+                            
+                            <div class="corner">
+
+                                <p class="title"> Bottom-left:  </p>
+                
+                                <input id="bottomLeft" type="number" value="0" />
+
                             </div>
-    
-                            <div class="color">
-                                <p> Alpha  </p>
-                                <input id="alpha" type="number" min="0" max="1" step="0.01" value="1"/>
+                
+                            <div class="corner">
+
+                                <p class="title"> Bottom-right:  </p>
+                
+                                <input id="bottomRight" type="number" value="0" />
+
                             </div>
                         </div>
+                        
+                        <div id="otherCorners" class="otherCorners notDisplay">
+                            
+                            <p class="axis"> Vertical axis: </p>
+
+                            <div class="corner">
+
+                                <p class="title"> Top-left:  </p>
+                
+                                <input id="topLeftB" type="number" value="0" />
+
+                            </div>
+                
+                            
+                            <div class="corner">
+
+                                <p class="title"> Top-right:  </p>
+                
+                                <input id="topRightB" type="number" value="0" />
+
+                            </div>
+                            
+                            <div class="corner">
+
+                                <p class="title"> Bottom-left:  </p>
+                
+                                <input id="bottomLeftB" type="number" value="0" />
+
+                            </div>
+                
+                            <div class="corner">
+
+                                <p class="title"> Bottom-right:  </p>
+                
+                                <input id="bottomRightB" type="number" value="0" />
+
+                            </div>
+
+                        </div>
+
                     </div>
-                </div>
-            </div>
-        </div>
         
-        <div class="theDivContainer">
-            <div class="theDiv">
-                <p> Hey, hello! I will be your test div!</p>
+                    <div class="additionalFeatures">
+                        
+                        <div class="colorFeature">
+                        
+                            <p class="title"> Background Color (RGBA standard) </p>
+
+                            <div class="rgba">
+                        
+                                <div class="color">
+                        
+                                    <p> Red  </p>
+                        
+                                    <input id="red" type="number" min="0" max="255" value="0"/>
+                        
+                                </div>
+        
+                        
+                                <div class="color">
+                        
+                                    <p> Green  </p>
+                        
+                                    <input id="green" type="number" min="0" max="255" value="0"/>
+                        
+                                </div>
+        
+                        
+                                <div class="color">
+                        
+                                    <p> Blue  </p>
+                        
+                                    <input id="blue" type="number" min="0" max="255" value="0"/>
+                        
+                                </div>
+        
+                                <div class="color">
+                    
+                                    <p> Alpha  </p>
+                    
+                                    <input id="alpha" type="number" min="0" max="1" step="0.01" value="1"/>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+               
+                </div>
+
             </div>
+            
+            <div class="theDivContainer">
+
+                <div class="imgContainer">
+
+                    <img src="images/svg/star.svg" alt="" />
+
+                </div>
+
+                <div class="theDiv">
+
+                    <p> Hey, hello! I will be your test div!</p>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <div class="buttonContainer">
+
+            <button onclick="copyToClipboard()">Copy CSS to clipboard</button>
+
         </div>
-    </main>
 
-    <div class="buttonContainer">
-        <button onclick="copyToClipboard()">Copy CSS to clipboard</button>
-    </div>
+        <footer>
 
-    <footer>
-        <a href="https://github.com/phyJa" target="_blank" > Github </a>
+            <a href="https://github.com/phyJa" target="_blank" > Github </a>
 
-        <a href="https://www.linkedin.com/in/elias-bueno-5b089a1b0/" target="_blank" > LinkedIn </a>
+            <a href="https://www.linkedin.com/in/elias-bueno-5b089a1b0/" target="_blank" > LinkedIn </a>
 
-        <a href="https://github.com/florinpop17/app-ideas" target="_blank" > App-Ideas </a>
+            <a href="https://github.com/florinpop17/app-ideas" target="_blank" > App-Ideas </a>
 
-        <a href="https://www.facebook.com/elias.bueno.125" target="_blank" > Facebook </a>
-    </footer>
-    <!-- JavaScript -->
-    <script src="scripts/informationForScripts.js"></script>
-    <script src="scripts/functions.js"></script>
-    <script src="scripts/script.js"></script>
-</body>
+            <a href="https://www.facebook.com/elias.bueno.125" target="_blank" > Facebook </a>
+
+        </footer>
+
+        <!-- JavaScript -->
+
+        <script src="scripts/informationForScripts.js"></script>
+
+        <script src="scripts/functions.js"></script>
+
+        <script src="scripts/script.js"></script>
+
+    </body>
+
 </html>
