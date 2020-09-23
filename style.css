@@ -164,6 +164,20 @@ button {
     width: 80%;
 }
 
+.theDivContainer .imgContainer img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: rotation;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+    to {transform: rotate(360deg)};
+}
+
 .theDiv {
     background-color: rgba(0, 0, 0, 1);
     border: white solid 2px;

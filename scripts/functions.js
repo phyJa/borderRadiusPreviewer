@@ -100,19 +100,22 @@ function copyToClipboard(){
     const el = document.createElement('textarea');
 
     // Write in the element the string you want
-    el.value = `
-    .yourDiv {
-        background-color: rgba(${colors.red}, ${colors.green}, ${colors.blue}, ${colors.alpha});
-        width: 40%;
-        margin: 4vh auto;
-        padding: 3vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: 20px;
-        border-radius: ${theDiv.style.borderTopLeftRadius} ${theDiv.style.borderTopRightRadius} ${theDiv.style.borderBottomRightRadius} ${theDiv.style.borderBottomLeftRadius};
-    }`;
+    el.value = 
+        `
+            .yourDiv {
+                background-color: rgba(${colors.red}, ${colors.green}, ${colors.blue}, ${colors.alpha});
+                width: 40%;
+                margin: 4vh auto;
+                padding: 3vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: 20px;
+                border-radius:  
+                    ${theDiv.style.borderRadius} ;
+            }
+        `;
     
     // Insert the element in the HTML body
     document.body.appendChild(el);
