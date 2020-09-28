@@ -283,6 +283,36 @@ footer a + a {
     
     }
 
+    .bordersTitle,
+    .controlPanel .additionalFeatures p.title {
+
+        font-size: 3.4vw;
+
+    }
+
+    .controlPanel p button {
+
+        font-size: 2vw;
+
+    }
+
+    .controlPanel .corners .fourMainCorners,
+    .controlPanel .corners .otherCorners {
+    
+        font-size: 2.5vw;
+    
+        margin-top: 20px;
+    
+    } 
+
+        
+    .controlPanel .corners .corner input {
+
+        font-size: 2.5vw;
+
+    }
+    
+
     .theDivContainer {
     
         height: 100px;
