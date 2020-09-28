@@ -258,14 +258,35 @@ footer a + a {
 
 /* ==== Responsivity ==== */
 @media(max-width: 880px) {
+
+    header h1 {
+
+        font-size: 6vw;
+    
+    }
+
     main {
+
         grid-template-columns: 1fr;
+        
         width: 80%;
+        
         margin: 0 auto;
+        
         height: 100vw;
+    
+    }
+
+    .controlPanel .mainTitle {
+
+        font-size: 5vw;
+    
     }
 
     .theDivContainer {
+    
         height: 100px;
+    
     }
+
 }
