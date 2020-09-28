@@ -255,3 +255,17 @@ footer a:active {
 footer a + a {
     margin-left: 8vw;
 }
+
+/* ==== Responsivity ==== */
+@media(max-width: 880px) {
+    main {
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: 0 auto;
+        height: 100vw;
+    }
+
+    .theDivContainer {
+        height: 100px;
+    }
+}
