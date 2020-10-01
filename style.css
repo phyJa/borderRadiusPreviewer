@@ -297,7 +297,8 @@ footer a + a {
     }
 
     .controlPanel .corners .fourMainCorners,
-    .controlPanel .corners .otherCorners {
+    .controlPanel .corners .otherCorners,
+    .controlPanel .additionalFeatures .colorFeature .rgba .color p {
     
         font-size: 2.5vw;
     
@@ -306,9 +307,12 @@ footer a + a {
     } 
 
         
-    .controlPanel .corners .corner input {
+    .controlPanel .corners .corner input,
+    .controlPanel .additionalFeatures .colorFeature .rgba .color input {
 
         font-size: 2.5vw;
+
+        width: 10vw;
 
     }
     
