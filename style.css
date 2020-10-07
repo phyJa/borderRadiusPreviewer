@@ -75,6 +75,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 2vw auto;
 }
 
 .controlPanel p button {
@@ -156,13 +157,27 @@ button {
 }
 
 .theDivContainer {
+   
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     margin: 0 auto;
+
     height: 80%;
+
     width: 80%;
+
     position: relative;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    z-index: -2;
+
 }
 
 .theDivContainer .imgContainer {
@@ -188,7 +203,7 @@ button {
 
 .theDiv {
     background-color: rgba(0, 0, 0, 1);
-    border: white solid 2px;
+    border: black solid 1px;
     padding: 3vw;
     display: flex;
     align-items: center;
@@ -200,12 +215,17 @@ button {
 .theDiv p {
     width: 50%;
     font-size: 2vw;
+    color: white;
 }
 
 .buttonContainer {
+
     margin: 4vw 0;
+
     display: flex;
+    
     justify-content: center;
+
 }
 
 .buttonContainer button {
